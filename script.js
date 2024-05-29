@@ -8,6 +8,27 @@ btn.addEventListener("click", () => {
         alert("Invalid Input!")
         return 1;
     }
+    const rows = document.querySelectorAll(".container-row");
+    rows.forEach((row) => {
+        row.remove();
+    });
+    for (let i = 0; i < input; i++) {
+        const div = document.createElement("div");
+        div.classList.add("container-row");
+        container.appendChild(div);
+        for (let i = 0; i < input; i++) {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            container.style.cssText = 'width: auto';
+            div.appendChild(box);
+        }
+    }
+    const allBox = document.querySelectorAll(".box");
+    allBox.forEach((box) => {
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = generateJustOneColor();
+        });
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
