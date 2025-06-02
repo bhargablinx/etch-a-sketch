@@ -27,6 +27,7 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
@@ -182,6 +183,12 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .top-8 {
+    top: calc(var(--spacing) * 8);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -251,6 +258,9 @@
   .w-\[100px\] {
     width: 100px;
   }
+  .w-\[150px\] {
+    width: 150px;
+  }
   .w-\[180px\] {
     width: 180px;
   }
@@ -301,6 +311,12 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -374,6 +390,10 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-emerald-500 {
     color: var(--color-emerald-500);
