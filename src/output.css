@@ -21,6 +21,7 @@
     --color-slate-800: oklch(27.9% 0.041 260.031);
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-black: #000;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -283,6 +284,9 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .cursor-crosshair {
+    cursor: crosshair;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -312,6 +316,9 @@
   .border-b-0 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 0px;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-emerald-500 {
     background-color: var(--color-emerald-500);
