@@ -6,7 +6,7 @@ for (let i = 0; i < gridCount; i++) {
     rowDiv.classList.add("border", "flex-1", "flex");
     for (let j = 0; j < gridCount; j++) {
         const colDiv = document.createElement("div");
-        colDiv.classList.add("border", "flex-1", "flex");
+        colDiv.classList.add("border", "border-b-0", "flex-1", "flex");
         rowDiv.appendChild(colDiv);
     }
     gridContainer.appendChild(rowDiv);
